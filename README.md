@@ -82,6 +82,7 @@ Lalu kita juga dapat membuat user baru dengan menekan tombol create user seperti
 Dapat dilihat pada gambar 3.3 ada user dengan nama tegar dengan groupnya adalah Adsis-E yang artinya telah berhasil memasukkan user tegar kedalam group Adsis-E
 
 4. Lakukan ping ke alamat ip anda dan coba lakukan reject dan drop di webmin, lalu analisis apa yang terjadi?
+  
 **ScreenShot :**
   
 <p align="center">
