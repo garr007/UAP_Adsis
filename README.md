@@ -7,21 +7,18 @@
   <p align="center">
   <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.001.png" >
 </p>
+<p align="center">Gambar 1.1</p>
 
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.002.png" >
+</p>
+<p align="center">Gambar 1.2</p>
 
-![](https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.001.png?raw=true)
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.003.png" >
+</p>
 
-Gambar 1.1
-
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.002.png)
-
-\
-
-Gambar 1.2
-
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.003.png)
-
-Gambar 1.3
+<p align="center">Gambar 1.3</p>
 
 **Penjelasan :**
 
@@ -29,21 +26,22 @@ Pada Gambar 1.1 menggunakan perintah mkdir untuk membuat directory baru dan isi 
 
 
 2. Lakukan konfigurasi alamat IP address sementara pada sistem dan default gateway. (petunjuk 192.168.56.x | x adalah nomor absen)
-
 Nomor Absen saya 1
 
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.004.png" >
+</p>
+<p align="center">Gambar 2.1</p>
 
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.004.png)**Screenshot :**
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.005.png" >
+</p>
+<p align="center">Gambar 2.2</p>
 
-Gambar 2.1
-
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.005.png)
-
-Gambar 2.2
-
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.006.png)
-
-Gambar 2.3
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.006.png" >
+</p>
+<p align="center">Gambar 2.3</p>
 
 
 **Penjelasan :**
@@ -57,15 +55,20 @@ Dapat dilihat juga pada gambar 2.2 untuk mengkonfigurasi default gateway kita pe
 
 **ScreenShot :**
 
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.007.png)
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.007.png" >
+</p>
+<p align="center">Gambar 3.1</p>
 
-Gambar 3.1
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.008.png" >
+</p>
+<p align="center">Gambar 3.2</p>
 
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.008.png)
-
-Gambar 3.2
-
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.009.png)Gambar 3.3
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.009.png" >
+</p>
+<p align="center">Gambar 3.3</p>
 
 
 **Penjelasan :**
@@ -76,19 +79,23 @@ Lalu kita juga dapat membuat user baru dengan menekan tombol create user seperti
 
 Dapat dilihat pada gambar 3.3 ada user dengan nama tegar dengan groupnya adalah Adsis-E yang artinya telah berhasil memasukkan user tegar kedalam group Adsis-E
 
-1. Lakukan ping ke alamat ip anda dan coba lakukan reject dan drop di webmin, lalu analisis apa yang terjadi?
+4. Lakukan ping ke alamat ip anda dan coba lakukan reject dan drop di webmin, lalu analisis apa yang terjadi?
+**ScreenShot :**
+  
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.010.png" >
+</p>
+<p align="center">Gambar 4.1</p>
 
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.010.png)**Screenshot :**
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.011.png" >
+</p>
+<p align="center">Gambar 4.2</p>
 
-Gambar 4.1
-
-`	`**![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.011.png)**
-
-Gambar 4.2
-
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.012.png)
-
-Gambar 4.3
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.012.png" >
+</p>
+<p align="center">Gambar 4.3</p>
 
 
 
@@ -101,13 +108,15 @@ Pertama-tama pilih menu networking dan pilih linux firewall lalu tekan tombol ad
 
 **Screenshot :**
 
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.013.png)
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.013.png" >
+</p>
+<p align="center">Gambar 5.1</p>
 
-Gambar 5.1
-
-![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.014.png)
-
-Gambar 5.2
+<p align="center">
+  <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.014.png" >
+</p>
+<p align="center">Gambar 5.2</p>
 
 **Penjelasan :**
 
