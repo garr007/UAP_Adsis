@@ -3,7 +3,7 @@
 
 1. Buat direktori dengan nama UAP-Adsis, isi dengan file txt dengan format penamaan catatannya-<nama kamu>.txt, kemudian isi file txt tersebut dengan nama dan NIM kamu. Kemudian atur permission view-only pada file tersebut untuk user biasa. Tunjukkan bukti berupa screenshot yang menunjukkan bahwa file tersebut berhasil diatur permissionnya menjadi view-only untuk user biasa.
   
-  **Screenshot :**
+**Screenshot :**
   <p align="center">
   <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.001.png" >
 </p>
@@ -27,6 +27,8 @@ Pada Gambar 1.1 menggunakan perintah mkdir untuk membuat directory baru dan isi 
 
 2. Lakukan konfigurasi alamat IP address sementara pada sistem dan default gateway. (petunjuk 192.168.56.x | x adalah nomor absen)
 Nomor Absen saya 1
+  
+**Screenshot :**
 
 <p align="center">
   <img src="https://github.com/garr007/UAP_Adsis/blob/main/Images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.004.png" >
