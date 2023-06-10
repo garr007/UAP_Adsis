@@ -22,7 +22,7 @@
 
 **Penjelasan :**
 
-Pada Gambar 1.1 menggunakan perintah mkdir untuk membuat directory baru dan isi dengan file txt dengan format penamaan catatannya-tegar.txt, kemudian isi file txt tersebut dengan nama dan NIM saya seperti pada gambar 1.2. Kemudian mengatur permission view-only pada file tersebut untuk user biasa menggunakan perintah chmod 400 catatannya-harsya.txt dan untuk melihat apakah sudah benar permission file tersebut sesuai dengan perintah soal, maka kita gunakan ls -l catatannya harsya.txt. Dapat dilihat permission nya telah berubah menjadi read only.
+Pada Gambar 1.1 menggunakan perintah mkdir untuk membuat directory baru dan isi dengan file txt dengan format penamaan catatannya-tegar.txt, kemudian isi file txt tersebut dengan nama dan NIM saya seperti pada gambar 1.2. Kemudian mengatur permission view-only pada file tersebut untuk user biasa menggunakan perintah chmod 400 catatannya-tegar.txt dan untuk melihat apakah sudah benar permission file tersebut sesuai dengan perintah soal, maka kita gunakan ls -l catatannya tegar.txt. Dapat dilihat permission nya telah berubah menjadi read only.
 
 
 2. Lakukan konfigurasi alamat IP address sementara pada sistem dan default gateway. (petunjuk 192.168.56.x | x adalah nomor absen)
