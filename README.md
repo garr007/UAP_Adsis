@@ -1,238 +1,109 @@
-# **LATIHAN PRAKTIKUM PENGEMBANGAN APLIKASI MOBILE**
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.001.png)BAB	: BAB 11 ANDROID SENSOR (GPS) NAMA	: Muhammad Tegar Abhiram
+# UAP_Adsis
 
-NIM	215150700111009
 
-ASISTEN	: 1. BAGAS RADITYA NUR LISTYAWAN
+1. Buat direktori dengan nama UAP-Adsis, isi dengan file txt dengan format penamaan catatannya-<nama kamu>.txt, kemudian isi file txt tersebut dengan nama dan NIM kamu. Kemudian atur permission view-only pada file tersebut untuk user biasa. Tunjukkan bukti berupa screenshot yang menunjukkan bahwa file tersebut berhasil diatur permissionnya menjadi view-only untuk user biasa.
 
-2\. KENNETH CLINTON WAWORUNTU TANGGAL	: 2 Juni 2023
 
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.001.png)
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.001.png)**Screenshot :**
 
-# **SOAL 1**
-1. ## **Soal**
+Gambar 1.1
 
-Dari hasil latitude dan longitude yang didapatkan dari sensor GPS yang telah dipraktikkan sebelumnya, konversikan data tersebut menjadi sebuah alamat (nama jalan, kecamatan
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.002.png)
 
-,kota dll) dan tampilkan hasilnya pada layout android.
+\
 
-1. ## **Screenshoot**
-##
-## ![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.002.png)
-## **Gambar 1.1**
-## ![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.003.png)
-## **Gambar 1.2**
-##
+Gambar 1.2
 
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.003.png)
 
-1. **Penjelasan**
+Gambar 1.3
 
-Untuk menampilkan Alamat yang terdiri dari nama jalan, kecamatan ,kota dll. Dapat dilakukan dengan cara menambahkan Importing Class Geocoder dan Membuat List untuk menjadi tempat menyimpan alamat tersebut.
+**Penjelasan :**
 
-1. Geocoder berfungsi untuk mengkonversi koordinat geografis ke dalam bentuk alamat.
-1. Untuk mendapatkan koordinat geografis kita bisa menggunakan kita bisa menggunakan location.getLatitude() dan location.getLongitude() yang ada dalam class Geocoder yang nantinya dikonversi menjadi sebuah alamat
-1. Jika proses konversi geocoding pada try catch berhasil dan setidaknya satu alamat ditemukan, maka alamat pertama dalam daftar alamat tersebut (addresses.get(0)) akan ditampilkan	dan	diset	ke	variable	TextView alamat.setText(addresses.get(0).getAddressLine(0)).
-1. Sedangkan, getAddressLine(0) mengambil baris alamat pertama dari alamat yang ditemukan.
-1. catch (IOException e) dipanggil ketika ada pengecualian saat melakukan konversi geocoding dengan memanggil e.printStackTrace();
+Pada Gambar 1.1 menggunakan perintah mkdir untuk membuat directory baru dan isi dengan file txt dengan format penamaan catatannya-tegar.txt, kemudian isi file txt tersebut dengan nama dan NIM saya seperti pada gambar 1.2. Kemudian mengatur permission view-only pada file tersebut untuk user biasa menggunakan perintah chmod 400 catatannya-harsya.txt dan untuk melihat apakah sudah benar permission file tersebut sesuai dengan perintah soal, maka kita gunakan ls -l catatannya harsya.txt. Dapat dilihat permission nya telah berubah menjadi read only.
 
-private Geocoder geocoder;
 
-private List<Address> addresses;
+2. Lakukan konfigurasi alamat IP address sementara pada sistem dan default gateway. (petunjuk 192.168.56.x | x adalah nomor absen)
 
-geocoder = new Geocoder(this, Locale.getDefault()); try {
+Nomor Absen saya 1
 
-addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
 
-alamat.setText(addresses.get(0).getAddressLine(0));
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.004.png)**Screenshot :**
 
-} catch (IOException e) {
+Gambar 2.1
 
-Penambahan pada MainActivity.java
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.005.png)
 
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.004.png)
+Gambar 2.2
 
-e.printStackTrace();
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.006.png)
 
-}
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.005.png)
+Gambar 2.3
 
 
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.006.png)activity\_main.xml
+**Penjelasan :**
 
-<?xml version="1.0" encoding="utf-8"?>
+Pada gambar 2.1 dapat dilihat IP saya awalnya 192.168.188.132 pada antarmuka jaringan “ens33” lalu dengan menjalankan perintah ifconfig “ens33” 192.168.56.1 netmask 255.255.255.0 up yang artinya kita akan mengganti alamat ip dari antarmuka jaringan “ens33” menjadi 192.168.56.1 dengan netmask 255.255.255.0 seperti pada gambar 2.2.
 
-<LinearLayout xmlns:android="<http://schemas.android.com/apk/res/android>" xmlns:tools="<http://schemas.android.com/tools>" tools:context=".MainActivity"
+Dapat dilihat juga pada gambar 2.2 untuk mengkonfigurasi default gateway kita perlu menjalankan perintah sudo route add default gw 192.168.56.1 ens 33 yang mana kita akan mengganti default gateway dari antarmuka jaringan “ens33” menjadi 192.168.56.1. Kita dapat melakukan ping ke alamat ip baru jika ingin mengecek apakah ip berfungsi seperti gambar 2.3
 
-android:layout\_width="match\_parent" android:layout\_height="match\_parent" android:orientation="vertical" android:padding="14dp">
 
-<RelativeLayout android:layout\_width="match\_parent" android:layout\_height="wrap\_content">
+3. Lakukan Instalasi Webmin lalu buatlah user bernama nama anda, lalu buat group Adsis\_(kelas masing-masing) dan masukkan nama anda di group
 
-<TextView android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" android:textColor="@color/black" android:text="Latitude" />
+**ScreenShot :**
 
-<TextView android:id="@+id/latitude"
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.007.png)
 
-android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" android:textColor="@color/black" android:layout\_alignParentEnd="true" android:text="..." />
+Gambar 3.1
 
-</RelativeLayout>
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.008.png)
 
-<RelativeLayout android:layout\_width="match\_parent" android:layout\_height="wrap\_content">
+Gambar 3.2
 
-<TextView android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" android:textColor="@color/black" android:text="Longitude" />
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.009.png)Gambar 3.3
 
-<TextView android:id="@+id/longitude" android:layout\_width="wrap\_content"
 
-android:layout\_height="wrap\_content" android:textColor="@color/black" android:layout\_alignParentEnd="true" android:text="..." />
+**Penjelasan :**
 
-</RelativeLayout>
+Karena saya sudah menginstall Webmin jadi bisa langsung membukanya di browser dengan “alamat IP”:10000 dan melakukan login.Setelah berhasil login lihat dipojok kiri dan klik pilihan system dan cari users and groups.Setelah itu klik tombol create group maka akan muncul tampilan seperti gambar 3.1 dengan group yang akan dibuat diberi nama dengan nama “Adsis-E”.
 
-<RelativeLayout android:layout\_width="match\_parent" android:layout\_height="wrap\_content">
+Lalu kita juga dapat membuat user baru dengan menekan tombol create user seperti gambar 3.2 disini saya membuat user dengan nama tegar dan memasukkan ke group yang Adsis-E yang telah dibuat.
 
-<TextView android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" android:text="Altitude" android:textColor="@color/black" />
+Dapat dilihat pada gambar 3.3 ada user dengan nama tegar dengan groupnya adalah Adsis-E yang artinya telah berhasil memasukkan user tegar kedalam group Adsis-E
 
-<TextView android:id="@+id/altitude"
+1. Lakukan ping ke alamat ip anda dan coba lakukan reject dan drop di webmin, lalu analisis apa yang terjadi?
 
-android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" android:textColor="@color/black" android:layout\_alignParentEnd="true" android:text="..." />
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.010.png)**Screenshot :**
 
-</RelativeLayout>
+Gambar 4.1
 
-<RelativeLayout android:layout\_width="match\_parent" android:layout\_height="wrap\_content">
+`	`**![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.011.png)**
 
-<TextView android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" android:text="Akurasi" android:textColor="@color/black" />
+Gambar 4.2
 
-<TextView android:id="@+id/akurasi"
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.012.png)
 
-android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" android:textColor="@color/black" android:layout\_alignParentEnd="true" android:text="..." />
+Gambar 4.3
 
-</RelativeLayout>
 
-<RelativeLayout android:layout\_width="match\_parent" android:layout\_height="wrap\_content">
 
-<TextView android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" android:text="Alamat" android:textColor="@color/black" />
+**Penjelasan :**
 
-</RelativeLayout>
+Pertama-tama pilih menu networking dan pilih linux firewall lalu tekan tombol add rule dan lakukan konfigurasi seperti gambar 4.2 maka jika kita melakukan ping 192.168.56.1 tidak akan muncul apa-apa karena penolakan drop artinya sistem tidak mengirimkan respons apa pun ke pengirim paket. Dalam hal ini, pengirim tidak menerima tanda-tanda bahwa paket telah ditolak sistem.
 
-<RelativeLayout android:layout\_width="match\_parent" android:layout\_height="wrap\_content">
 
-<TextView
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.007.png)
+5. Buatlah perintah otomatis yang berfungsi untuk ping [www.filkom.ub.ac.id](http://www.filkom.ub.ac.id/)
 
-android:id="@+id/alamat" android:layout\_width="wrap\_content" android:layout\_height="wrap\_content" android:textColor="@color/black" android:layout\_alignParentEnd="true" android:text="..." />
+**Screenshot :**
 
-</RelativeLayout>
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.013.png)
 
-<Button
+Gambar 5.1
 
-android:id="@+id/btn\_find" android:layout\_width="match\_parent" android:layout\_height="wrap\_content" android:layout\_marginTop="14dp" android:textAllCaps="false" android:text="Get Location" />
+![](images/Aspose.Words.f39e40ac-573f-4559-b2e7-d24427e0ee76.014.png)
 
-</LinearLayout>
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.008.png)
+Gambar 5.2
 
+**Penjelasan :**
 
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.009.png)MainActivity.java
-
-package com.example.tugas11;
-
-import androidx.annotation.NonNull; import android.Manifest;
-
-import androidx.appcompat.app.AppCompatActivity; import androidx.core.app.ActivityCompat;
-
-import android.content.pm.PackageManager; import android.location.Address;
-
-import android.location.Geocoder; import android.os.Build;
-
-import android.os.Bundle; import android.widget.Button; import android.widget.TextView; import android.widget.Toast;
-
-import com.google.android.gms.location.FusedLocationProviderClient; import com.google.android.gms.location.LocationServices;
-
-import java.io.IOException; import java.util.List;
-
-import java.util.Locale;
-
-public class MainActivity extends AppCompatActivity { private TextView latitude, longitude, altitude, akurasi, alamat; private Button btnFind;
-
-private FusedLocationProviderClient locationProviderClient; private Geocoder geocoder;
-
-private List<Address> addresses; @Override
-
-protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState);
-
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.010.png)setContentView(R.layout.activity\_main); latitude = findViewById(R.id.latitude); longitude = findViewById(R.id.longitude); altitude = findViewById(R.id.altitude); akurasi = findViewById(R.id.akurasi); alamat = findViewById(R.id.alamat); btnFind = findViewById(R.id.btn\_find); locationProviderClient =
-
-LocationServices.getFusedLocationProviderClient(MainActivity.this); geocoder = new Geocoder(this, Locale.getDefault());
-
-btnFind.setOnClickListener(v -> { getLocation();
-
-});
-
-}
-
-@Override
-
-public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-
-super.onRequestPermissionsResult(requestCode, permissions, grantResults); if (requestCode == 10) {
-
-if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS\_FINE\_LOCATION) != PackageManager.PERMISSION\_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS\_COARSE\_LOCATION) != PackageManager.PERMISSION\_GRANTED) {
-
-Toast.makeText(getApplicationContext(), "Izin lokasi tidak di aktifkan!", Toast.LENGTH\_SHORT).show();
-
-} else {
-
-if (Build.VERSION.SDK\_INT >= Build.VERSION\_CODES.M) {
-
-getLocation();
-
-}
-
-}
-
-}
-
-}
-
-private void getLocation() {
-
-if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS\_FINE\_LOCATION) != PackageManager.PERMISSION\_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS\_COARSE\_LOCATION) != PackageManager.PERMISSION\_GRANTED) {
-
-// get Permission
-
-if (Build.VERSION.SDK\_INT >= Build.VERSION\_CODES.M) {
-
-requestPermissions(new String[]{Manifest.permission.ACCESS\_FINE\_LOCATION, Manifest.permission.ACCESS\_COARSE\_LOCATION}, 10);
-
-}
-
-} else {
-
-// get Location
-
-locationProviderClient.getLastLocation().addOnSuccessListener(location -> {
-
-if (location != null) { latitude.setText(String.valueOf(location.getLatitude())); longitude.setText(String.valueOf(location.getLongitude())); altitude.setText(String.valueOf(location.getAltitude())); akurasi.setText(location.getAccuracy() + "%");
-
-try {
-
-addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-
-alamat.setText(addresses.get(0).getAddressLine(0));
-
-} catch (IOException e) { e.printStackTrace();
-
-}
-
-} else {
-
-Toast.makeText(getApplicationContext(), "Lokasi tidak aktif!", Toast.LENGTH\_SHORT).show();
-
-}
-
-}).addOnFailureListener(e -> Toast.makeText(getApplicationContext(), e.getLocalizedMessage(), Toast.LENGTH\_SHORT).show());
-
-}
-
-}
-
-}
-![](Aspose.Words.c0384aa1-ccb2-4d9a-98a2-0e65fa1c9eee.011.png)
-
-
+Untuk membuat printah otomatis kita harus menjalankan perintah sudo crontab -e untuk mengakses dan mengedit crontab system.Lalu menambahkan perintah konfigurasi sepergi gambar 5.1 lalu save dan keluar.Dengan menjalankan perintah ps -aux | grep ping kita dapat melihat bahwa setiap 2 menit system akan meng-ping ke filkom.ub.ac.id seperti pada gambar 5.2
